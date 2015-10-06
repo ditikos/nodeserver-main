@@ -1,13 +1,47 @@
 <!DOCTYPE html>
-<html>
+<html lang="el">
     <head>
         <meta charset="utf-8">
         <title>Example App</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="A front-end template that helps you build fast, modern mobile web apps.">
+        <meta name="viewport" content="width=device-width, initial-scale=1">        
         <script type="text/javascript" src="/js/material.js"></script>
+        <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700,300,100&subset=latin,greek' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" href="/css/material.css"/>
         <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+        <style type="text/css">
+            body {
+                margin:0;
+                padding:0;
+                font-family:"Roboto Slab",serif;
+            }
+        </style>
     </head>
     <body>
-        {{{body}}}
+    <!-- Always shows a header, even in smaller screens. -->
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+        <div class="mdl-layout__header-row">
+        <!-- Title -->
+        <span class="mdl-layout-title">Εφαρμογές</span>
+        <!-- Add spacer, to align navigation to the right -->
+        <div class="mdl-layout-spacer"></div>
+        <!-- Navigation. We hide it in small screens. -->
+        <nav class="mdl-navigation mdl-layout--large-screen-only">
+            <a class="mdl-navigation__link" href="">Είσοδος</a>
+        </nav>
+        </div>
+    </header>
+    <div class="mdl-layout__drawer">
+        <span class="mdl-layout-title">Εφαρμογές</span>
+        <nav class="mdl-navigation">
+        <a class="mdl-navigation__link" href="">Είσοδος</a>
+        </nav>
+    </div>
+    <main class="mdl-layout__content">
+        <div class="page-content">{{{body}}}</div>
+    </main>
+    </div>
     </body>
 </html>
