@@ -1,5 +1,23 @@
 {
   "name": "nodeserver",
+  "version": "1.0.0",
+  "author": "Panagiotis Chalatsakos <chibioni@gmail.com>",
+  "contributors": [{
+    "name": "Mr Catman",
+    "email": "hpan@net360.gr"
+  }],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ditikos/nodeserver-main"
+  },
+  "keywords": [
+    "nodejs",
+    "static serving",
+    "microapps",
+    "material design",
+    "google"
+  ],
   "description": "Microservices",
   "dependencies": {
     "connect": "^3.4.0",
