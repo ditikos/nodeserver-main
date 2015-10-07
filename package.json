@@ -2,10 +2,12 @@
   "name": "nodeserver",
   "version": "1.0.0",
   "author": "Panagiotis Chalatsakos <chibioni@gmail.com>",
-  "contributors": [{
-    "name": "Mr Catman",
-    "email": "hpan@net360.gr"
-  }],
+  "contributors": [
+    {
+      "name": "Mr Catman",
+      "email": "hpan@net360.gr"
+    }
+  ],
   "main": "index.js",
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
     "connect": "^3.4.0",
     "express": "^4.13.3",
     "express-handlebars": "^2.0.1",
+    "material-design-lite": "^1.0.5",
     "morgan": "^1.6.1"
   },
   "license": "MIT"
