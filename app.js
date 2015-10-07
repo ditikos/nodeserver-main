@@ -30,5 +30,5 @@ app.get('/', function(req, res) {
 // Better usage of app/http
 var server = http.createServer(app);
 server.listen(3000, function() {
-	console.log("Server Started");
+	console.log("Server Started on: %s:%s",this.address().address,this.address().port);
 });
