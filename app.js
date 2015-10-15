@@ -1,14 +1,22 @@
 'use strict';
 
+// Local Files
+
+
+
 // Setup Initial
 var http	= require('http'),
 	path	= require('path'),
 	express = require('express'),
 	exphbs	= require('express-handlebars'),
-	morgan	= require('morgan');
+	morgan	= require('morgan'),
+	mongoose = require('mongoose');
 
 // Initialize expressJS
 var app 	= express();
+
+// Initialize+Setup Mongoose
+
 
 // Setup Morgan - Logger
 app.use(morgan('combined'));
@@ -30,5 +38,6 @@ app.get('/', function(req, res) {
 // Better usage of app/http
 var server = http.createServer(app);
 server.listen(3000, function() {
+	console.log(this.address());
 	console.log("Server Started on: %s:%s",this.address().address,this.address().port);
 });
